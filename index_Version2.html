@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Agent Research Assistant</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; max-width: 800px; }
+        h1 { color: #1F4E79; }
+        textarea { width: 100%; min-height: 120px; }
+        button { padding: 10px 16px; margin-top: 12px; }
+        .status { margin-top: 12px; font-style: italic; }
+        .result { margin-top: 24px; }
+        .result a { color: #1F4E79; }
+    </style>
+</head>
+<body>
+    <h1>Multi-Agent Research Assistant</h1>
+    <p>Enter a research question to generate a downloadable report:</p>
+    <textarea id="research-question" placeholder="Type your question here..."></textarea>
+    <br />
+    <button id="generate-button">Generate Report</button>
+    <div id="status-message"></div>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
