@@ -26,12 +26,12 @@ function appendMessageToDisplay(sender, content) {
     
     const messageText = document.createTextNode(' ' + content + ' ');
     
-    const timeStamp = document.createElement('small');
-    timeStamp.textContent = '(' + timestamp + ')';
+    const timestampElement = document.createElement('small');
+    timestampElement.textContent = '(' + timestamp + ')';
     
     messageBlock.appendChild(senderLabel);
     messageBlock.appendChild(messageText);
-    messageBlock.appendChild(timeStamp);
+    messageBlock.appendChild(timestampElement);
     
     displayArea.appendChild(messageBlock);
     displayArea.scrollTop = displayArea.scrollHeight;
