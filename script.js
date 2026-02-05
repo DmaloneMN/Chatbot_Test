@@ -1,4 +1,4 @@
-const API_ENDPOINT = "https://<your-apim-name>.azure-api.net/research";
+const API_ENDPOINT = "https://apim-multiagent-research.azure-api.net/research";
 
 const statusMessage = document.getElementById("status-message");
 const result = document.getElementById("result");
@@ -38,4 +38,5 @@ button.addEventListener("click", async () => {
     } finally {
         button.disabled = false;
     }
+
 });
