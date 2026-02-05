@@ -21,7 +21,18 @@ function appendMessageToDisplay(sender, content) {
         messageBlock.style.textAlign = 'left';
     }
     
-    messageBlock.innerHTML = `<strong>${sender}:</strong> ${content} <small>(${timestamp})</small>`;
+    const senderLabel = document.createElement('strong');
+    senderLabel.textContent = sender + ':';
+    
+    const messageText = document.createTextNode(' ' + content + ' ');
+    
+    const timeStamp = document.createElement('small');
+    timeStamp.textContent = '(' + timestamp + ')';
+    
+    messageBlock.appendChild(senderLabel);
+    messageBlock.appendChild(messageText);
+    messageBlock.appendChild(timeStamp);
+    
     displayArea.appendChild(messageBlock);
     displayArea.scrollTop = displayArea.scrollHeight;
 }
